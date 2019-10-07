@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    /*
+    function Person(name, age) {
+      this.name = name;
+      this.age = age;
+
+      // 方法
+      this.say = function() {
+        console.log(this.name);
+      }
+    }
+
+    var zs = new Person('张三', 19);
+
+    var ls = new Person('李四', 20);
+
+    zs.say();
+    ls.say();
+    */
+    // 问题1: zs 和 ls 的say方法是同一个吗？
+
+    // console.log(zs.say == ls.say); // true -> 相同; 否则false，不同
+
+    // 问题2: zs 和 ls 的say方法是否功能一致？
+
+    // 原型的概念
+    // 原型就是 函数的 prototype属性 所引用的对象。
+    // 原型的属性和方法 是 共享给 其对应构造函数所创建的所有对象。
+    // 原型的作用：共享数据。解决代码的重复。继承的基石。
+
+    function Person(name, age) {
+      this.name = name
+      this.age = age
+    }
+
+    Person.prototype.say = function() {
+      console.log(this.name)
+    }
+
+    var zs = new Person('张三', 19);
+    var ls = new Person('李四', 20);
+
+    zs.say();
+    ls.say();
+
+    console.log(zs.say == ls.say);
+  </script>
+</body>
+
+</html>
