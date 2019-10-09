@@ -1,0 +1,35 @@
+1. 写一个函数用来反转数字
+
+reverseNumber(12345); // 54321
+
+2. 写一个函数来检测传入的字符串是否为回文
+
+isPalindrome('hello'); // false
+isPalindrome('madam'); // true
+
+3. 写一个函数对传入的字符串输出所有子字符串组合（注意去重）
+
+substrings('dog'); // ['d', 'do', 'dog', 'o', 'og', 'g']
+
+
+8.  编写一个函数 求斐波那契数列fibonacci中的第n个数是多少？？
+
+9. 编写一个函数，计算三个数字的大小，按从小到大顺序输出
+
+10.  编写一个函数，输入一个年月日，判断当天是那一年的第几天。
+
+==============================================================
+
+4. 写一个函数对传入的字符串重新按字母排序
+
+reorderStr('webmaster'); // abeemrstw
+
+5. 写一个函数对传入的字符串中每个单词的首字母大写
+
+upperWords('the quick brown fox'); // The Quick Brown Fox
+
+6. 写一个函数找出传入的字符串中最长的单词
+
+findLongest('Web Development Tutorial'); // Development
+
+7. 写一个函数获取参数中 最大值。
